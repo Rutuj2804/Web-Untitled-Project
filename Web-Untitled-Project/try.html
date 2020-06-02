@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="jquery">
+    $(function() {
+  var <a href="https://www.jqueryscript.net/accordion/">Accordion</a> = function(el, multiple) {
+    this.el = el || {};
+    this.multiple = multiple || false;
+
+    var links = this.el.find('.link');
+    links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+  }
+
+  Accordion.prototype.dropdown = function(e) {
+    var $el = e.data.el;
+      $this = $(this),
+      $next = $this.next();
+
+    $next.slideToggle();
+    $this.parent().toggleClass('open');
+
+    if (!e.data.multiple) {
+      $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+    };
+  }  
+
+  var accordion = new Accordion($('#accordion'), false);
+});
+  </script>
+</head>
+<body>
+  <header>
+    <ul class="cd-accordion margin-top-lg margin-bottom-lg">
+  <li class="cd-accordion__item cd-accordion__item--has-children">
+    <input class="cd-accordion__input" type="checkbox" name ="group-1" id="group-1">
+    <label class="cd-accordion__label cd-accordion__label--icon-folder" for="group-1"><span>Group 1</span></label>
+
+    <ul class="cd-accordion__sub cd-accordion__sub--l1">
+      <li class="cd-accordion__item cd-accordion__item--has-children">
+        <input class="cd-accordion__input" type="checkbox" name ="sub-group-1" id="sub-group-1">
+        <label class="cd-accordion__label cd-accordion__label--icon-folder" for="sub-group-1"><span>Sub Group 1</span></label>
+
+        <ul class="cd-accordion__sub cd-accordion__sub--l2">
+          <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+          <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+          <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+        </ul>
+      </li>
+  
+      <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+      <li class="cd-accordion__item"><a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a></li>
+    </ul>
+  </li>
+
+  <li class="cd-accordion__item cd-accordion__item--has-children">
+    <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
+  </li>
+  <li class="cd-accordion__item cd-accordion__item--has-children">
+    <a class="cd-accordion__label cd-accordion__label--icon-img" href="#0"><span>Image</span></a>
+  </li>
+</ul> <!-- cd-accordion -->
+</header>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
