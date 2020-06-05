@@ -11,7 +11,7 @@ nav{
 	font-weight: bold;
 	z-index: 99;
 	box-shadow: 0 5px 5px 0;
-	height: 80px;
+	
 }
 nav ul a{
 	font-weight: lighter;
@@ -25,6 +25,11 @@ nav ul a{
 }
 nav ul a:hover{
 	color: #fc4a1a!important; 
+}
+@media only screen and (min-width: 992px){
+	nav{
+		height: 80px;
+	}
 }
 /*--------------top header---------------*/
 
