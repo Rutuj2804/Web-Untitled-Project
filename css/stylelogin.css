@@ -197,7 +197,7 @@ a:hover{
 	background-size: 200%;
 	font-size: 1rem;
 	color: #fff;
-	font-family: roboto;
+	font-family: roboto, sans-serif;
 	margin: 2em 0;
 	cursor: pointer;
 	transition: .5s;
@@ -219,7 +219,7 @@ a:hover{
 	background-size: 200%;
 	font-size: 1rem;
 	color: #888;
-	font-family: roboto;
+	font-family: roboto, sans-serif;
 	margin: 2rem 2rem 2rem -2em;
 	cursor: pointer;
 	transition: .5s;
@@ -252,6 +252,7 @@ a:hover{
 	letter-spacing: 0.5px;
 	text-shadow: 0.2px 0;
 	color: #4267B2;
+	font-family: roboto, sans-serif;
 }
 .btnf:hover{
 	color: #4267B2; 
