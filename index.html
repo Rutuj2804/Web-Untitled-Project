@@ -11,8 +11,8 @@
 	<script src="https://kit.fontawesome.com/06b4efea42.js" crossorigin="anonymous"></script>
 	<script>document.getElementsByTagName("html")[0].className += " js";</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">document.getElementById("verticalline").style.borderLeft = "thick solid #0000FF";</script> 
 
 </head>
 <body>
@@ -31,13 +31,13 @@
 						<a class="nav-link cur-nav" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
+						<a class="nav-link" href="#servicesec">Services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					</li>
+						<a class="nav-link" href="#aboutussection">About Us</a>
+					</li>					
 					<li class="nav-item">
-						<a class="nav-link" href="#">Log In</a>
+						<a class="nav-link" href="login.html">Log In</a>
 					</li>
 					<li class="nav-item" style="padding-right: 60px; ">
 						<a class="nav-link" href="#">Sign Up</a>
@@ -72,7 +72,7 @@
 	
 	<!------------------- Why us section ------------------->
 	<div class =" container-fluid padding">
-		<h4 style="margin: 120px 0;text-align: center; font-weight: 1000">Why Us?</h4>
+		<h4 class="whyushead">Why Us?</h4>
 		<div class="row text-center padding" style="margin-bottom: 80px;">
 			<div class="col-xs-12 col-sm-6 col-lg-4" style="margin-bottom: 50px;">
 				<i class="fas fa-user-tie fa-4x" style=" color: #4ABDAC"></i>
@@ -92,7 +92,7 @@
 
 	<!------------------ Popular Services ------------------>
 
-<div>
+<div id="servicesec">
 		<h4 style="margin: 40px 0;text-align: center;font-weight: 1000;">Popular Services</h4>
 		<div class="row" style="margin:50px 20px 70px 20px;">
 			<div class="graphic" style="margin: 30px auto;">
@@ -121,7 +121,7 @@
 	<!------------------- Explore Market ----------------->
 	
 	<div class =" container-fluid padding">
-		<h4 style="margin: 90px 0 120px 0;text-align: center;font-weight: 1000;">Explore The Market</h4>
+		<h4 class="exploremarkethead">Explore The Market</h4>
 		<div class="row text-center padding" style="">
 			<div class="col-xs-12 col-sm-6 col-lg-4" style="margin-bottom: 50px;">
 				<i class="fas fa-object-group fa-4x" style=" color: #4ABDAC"></i>
@@ -157,7 +157,7 @@
 	<!-- Get you work done -->
 
  <section >
- 	<h4 style="margin: 40px 0 40px 0px;text-align: center;font-weight: 1000;"><b>Get Your Work Done With Confidence</b></h4>
+ 	<h4 style="margin: 40px 25px 40px 25px;text-align: center;font-weight: 1000;"><b>Get Your Work Done With Confidence</b></h4>
   <div class="row rowggg">
    <div class="cardget1 cardget ">
       <span class="containerget">
@@ -187,11 +187,11 @@
  </section>
 <!------------------ ABOUT US -------------------->
 
-<section class ="container-fluid">
-		<h4 style="text-align: center;font-weight: 1000;">About Us</h4>
+<section class ="container-fluid" id="aboutussection">
+		<h4 class="aboutushead">About Us</h4>
 		<div class="row" >
-		<div class="col-xs-12 col-sm-12 col-md-8 abouttext">
-			<p style="padding: 10% ; font-size: 21px; letter-spacing: 2px;line-height: 50px;margin-top:10%">Kumonic is a one of its kind social networking platform for Artists to collaborate and network with Artists and get recognised globally. Join us and enjoy a range of service in a click.</p>
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<p class="abouttext">Kumonic is a one of its kind social networking platform for Artists to collaborate and network with Artists and get recognised globally. Join us and enjoy a range of service in a click.</p>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-4 aboutimg">
 			<img style="align-items: right;" src="images/aboutusvector.png">
